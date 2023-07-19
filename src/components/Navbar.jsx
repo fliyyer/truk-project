@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -65,7 +66,8 @@ export default function NavBar() {
                             <li className="text-black font-medium cursor-pointer hover:text-blue-600">
                                 Kalkulasi Harga
                             </li>
-                            <button className="bg-blue-800 py-2 px-7 text-white rounded-md ">Login</button>
+                            <Link to="/login">
+                                <button className="bg-blue-800 py-2 px-7 text-white rounded-md ">Login</button></Link>
                         </ul>
                     </div>
                 </div>
